@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bar">
+    <div class="dropdown">
+      <button class="dropbtn">Théme <img id="img" src="https://img4.hostingpics.net/pics/433442downarrow1.png"></button>
+      <div class="dropdown-content">
+        <a id="defaut" class="theme">Défaut</a>
+        <a id="apple" class="theme">Apple</a>
+        <a id="retro" class="theme">Assassin's Creed</a>
+      </div>
+    </div>
+    <h3>Mon Google Maps</h3>
+  </div>
+  <div id="floating-panel">
+    <strong>Depart :</strong>
+    <input id="start" type="text" name="start">
+    <strong>Arrivée :</strong>
+    <input id="end" type="text" name="end">
+    <button onclick="swap()">&#8644;</button><br>
+    <label>éviter les autoroutes</label>
+    <input id="auto" type="checkbox">
+    <br>
+    <input type="radio" id="cars" value="cars">
+    <label for="cars">Voiture</label>
+    <input type="radio" id="bike" value="bike">
+    <label for="bike">Vélo</label>
+    <input type="radio" id="bus" value="bus">
+    <label for="bus">Transport en commun</label>
+    <input type="radio" id="foot" value="foot">
+    <label for="foot">a piéd</label>
+    <br>
+    <button id="go">Itinéraire</button>
+  </div>
+  <hr>
+  <div id="right-panel"></div>
+  <div id="map"></div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTvQZnK0q_92rX7YXWrDwfNvnbYqgyheU&callback=initMap&libraries=places">
+  </script>
+  <script src="maps.js"></script>
+</body>
+</html>

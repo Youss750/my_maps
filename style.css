@@ -1,0 +1,145 @@
+ /* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ .bar{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #69B5FF;
+ }
+ h3{
+ 	text-align: center;
+ 	color: white;
+ 	font-family: OCR A Std, monospace;
+
+ }
+ #map {
+ 	height: 850px;
+ 	width: 850px;
+ 	margin-left: 26%;
+ 	margin-top: 2%;
+ }
+ /* Optional: Makes the sample page fill the window. */
+ html, body {
+ 	height: 100%;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ #floating-panel {
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 25%;
+ 	z-index: 5;
+ 	background-color: #fff;
+ 	padding: 5px;
+ 	border: 1px solid #999;
+ 	text-align: center;
+ 	font-family: 'Roboto','sans-serif';
+ 	line-height: 30px;
+ 	padding-left: 10px;
+ }
+ #right-panel {
+ 	font-family: 'Roboto','sans-serif';
+ 	line-height: 30px;
+ 	padding-right: 5%;
+ 	margin-top: 2%;
+ }
+
+ #right-panel select, #right-panel input {
+ 	font-size: 15px;
+ }
+
+ #right-panel select {
+ 	width: 100%;
+ }
+
+ #right-panel i {
+ 	font-size: 12px;
+ }
+ #right-panel {
+ 	height: 100%;
+ 	float: right;
+ 	width: 390px;
+ 	overflow: auto;
+ }
+ #map {
+ 	margin-right: 400px;
+ }
+ #floating-panel {
+ 	background: #fff;
+ 	padding: 5px;
+ 	font-size: 14px;
+ 	font-family: Arial;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+ 	display: none;
+ }
+ @media print {
+ 	#map {
+ 		height: 500px;
+ 		margin: 0;
+
+ 	}
+ 	#right-panel {
+ 		float: none;
+ 		width: auto;
+ 	}
+ }
+ hr{
+ 	margin-top: 1%;
+ 	border-top: 1px solid #dfe3e8;
+ 	width: 50%;
+ }
+ .dropdown {
+ 	float:right;
+ 	display: inline-block;
+ 	margin-right: 5%;
+ }
+ .dropbtn {
+ 	font-family: OCR A Std, monospace;
+ 	background-color: #69B5FF;
+ 	text-align: center;
+ 	color: white;
+ 	font-weight: bold;
+ 	font-family: Arial;
+ 	padding: 20px;
+ 	font-size: 16px;
+ 	border:none;
+ 	cursor: pointer;
+ }
+
+ .dropdown-content {
+ 	display: none;
+ 	right: 3%;
+ 	position: absolute;
+ 	background-color: #69B5FF;
+ 	min-width: 160px;
+ 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 	z-index: 1;
+ }
+ .dropdown-content a {
+ 	font-family: OCR A Std, monospace;
+ 	text-align: center;
+ 	color: white;
+ 	padding: 12px 16px;
+ 	text-decoration: none;
+ 	display: block;
+ 	cursor: pointer;
+ 	font-weight: bold;
+
+ }
+
+ .dropdown-content a:hover {color: black;}
+
+ .dropdown:hover .dropdown-content {
+ 	color: white;
+ 	display: block;
+ }
+
+ .dropdown:hover .dropbtn {
+ 	background-color: #60A5E8;
+ 	color: white;
+ }
+ #img{
+ 	height: 10px;
+ }
