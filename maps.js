@@ -101,13 +101,13 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   if($("#cars").prop("checked")){
     radio = "DRIVING";
   }
-  if($("#bike:checked")){
+  else if($("#bike").prop("checked")){
     radio = "BICYCLING";
   }
-  if($("#bus:checked")){
+  else if($("#bus:checked")){
     radio = "TRANSIT";
   }
-  if($("#foot:checked")){
+  else if($("#foot:checked")){
     radio = "WALKING";
   }
   else{
@@ -116,7 +116,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   directionsService.route({
     origin: start,
     destination: end,
-    travelMode: radio,
+    travelMode: "DRIVING",
     avoidHighways : checkbox
   }, function(response, status) {
     if (status === 'OK') {
